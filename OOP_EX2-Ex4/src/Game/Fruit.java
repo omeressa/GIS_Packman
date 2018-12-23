@@ -5,7 +5,7 @@ import Geom.Point3D;
 /**
  * Fruit class
  * 
- * @author Omar Essa & Warda Essa
+ * @author Omar Essa , Warda Essa
  *
  */
 public class Fruit {
