@@ -9,7 +9,6 @@ public class Lunch
 		MyFrame frame = new MyFrame();
 		frame.setVisible(true);
 		frame.setSize(frame.image.getWidth(),frame.image.getHeight());
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);		
 	}
 }
