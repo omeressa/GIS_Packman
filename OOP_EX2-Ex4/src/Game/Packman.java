@@ -16,10 +16,9 @@ public class Packman {
 	
 	/**
 	 * Constructor
-	 * @param packman
-	 * @param radius
-	 * @param speed
-	 * @param orientation
+	 * @param packman packman
+	 * @param radius radius
+	 * @param speed speed
 	 */
 	public Packman(Point3D packman, double radius, double speed) {
 		super();
@@ -31,7 +30,7 @@ public class Packman {
 	
 	/**
 	 * Copy Constructor
-	 * @param other
+	 * @param other other packman
 	 */
 	public Packman(Packman other) {
 		this.Packman = other.Packman;
