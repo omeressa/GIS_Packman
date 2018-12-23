@@ -3,9 +3,9 @@ package Game;
 import Geom.Point3D;
 
 /**
- * packkman class
- * 
- * @author Omar Essa & Warda Essa
+ * class PackMan
+ * this class contain all the data of one PackMan that is needed for Ex3
+ * @author omar essa , warda wssa
  *
  */
 public class Packman {

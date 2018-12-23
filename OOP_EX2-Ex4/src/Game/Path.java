@@ -7,7 +7,7 @@ import Geom.Point3D;
 /**
  * Gps_points path
  * 
- * @author Omar Essa & Warda Essa
+ * @author Omar Essa , Warda Essa
  *
  */
 public class Path {
