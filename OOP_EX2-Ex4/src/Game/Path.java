@@ -6,6 +6,7 @@ import Geom.Point3D;
 
 /**
  * Gps_points path
+ * 
  * @author Omar Essa & Warda Essa
  *
  */
@@ -82,9 +83,9 @@ public class Path {
 	
 	/**
 	 * function that gives us the time between packman and fruit
-	 * @param packman
-	 * @param fruit
-	 * @return time
+	 * @param packman packman
+	 * @param fruit fruit
+	 * @return time time
 	 */
 	public double time_P_F(Packman packman , Fruit fruit) {
 		double answer = map.distance3D(packman.getPackman(), fruit.getGps_point());
@@ -98,8 +99,8 @@ public class Path {
 
 	/**
 	 * function that gives us the total time of the path
-	 * @param packman
-	 * @return total time
+	 * @param packman packman
+	 * @return total time time
 	 */
 	public double totalTime_Path(Packman packman) {
 		
@@ -118,9 +119,9 @@ public class Path {
 
 	/**
 	 * function to get us to the next fruit in the path
-	 * @param packman
-	 * @param fruit
-	 * @param time
+	 * @param packman packman 
+	 * @param fruit FRUIT
+	 * @param time TIME 
 	 * @return fruit gps point
 	 */
 	public Point3D theNextPoint(Packman packman , Fruit fruit, double time) {

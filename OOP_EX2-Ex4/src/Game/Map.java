@@ -23,9 +23,9 @@ public class Map {
 
 	/**
 	 * Constructor
-	 * @param rotation_right_down
-	 * @param rotation_left_up
-	 * @param pic
+	 * @param rotation_right_down right down
+	 * @param rotation_left_up left up
+	 * @param pic pic ariel1
 	 */
 	public Map(Point3D rotation_right_down, Point3D rotation_left_up, String pic) {
 		super();
@@ -108,8 +108,8 @@ public class Map {
 	
 	/**
 	 * function that gives us pixel coordinates from gps point
-	 * @param gps_point  
-	 * @return
+	 * @param gps_point  point
+	 * @return point
 	 */
 	public Point3D Gps2Pixel(Point3D gps_point) {	
 	return new Point3D((double)((gps_point.x()-rotation_left_up.x())/y) ,	(double)((gps_point.y()-rotation_left_up.y())/x));		
@@ -117,9 +117,9 @@ public class Map {
 
 	/**
 	 * the reverse of the function up  
-	 * @param x
-	 * @param y
-	 * @return
+	 * @param x point.x
+	 * @param y point.y
+	 * @return point
 	 */
 	public Point3D Pixel2Gps(double x, double y) {	
 		return new Point3D((double)( y * this.y+rotation_left_up.x()),	(double)(x * this.x+rotation_left_up.y()) );
@@ -127,8 +127,8 @@ public class Map {
 	
 	/**
 	 * 3D distance between two pixel points
-	 * @param p1
-	 * @param p2
+	 * @param p1 point 1
+	 * @param p2 point 2
 	 * @return distance
 	 */
 	public double distance3D(Point3D p1, Point3D p2) {

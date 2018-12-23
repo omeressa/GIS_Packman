@@ -25,8 +25,8 @@ public class Game {
 
 	/**
 	 * Constructor
-	 * @param packmans
-	 * @param fruits
+	 * @param packmans packmen
+	 * @param fruits fruits
 	 */
 	public Game(ArrayList<Packman> packmans , ArrayList<Fruit> fruits) {
 		this.packmans = packmans;
@@ -36,7 +36,7 @@ public class Game {
 
 	/**
 	 * Csv file reader for Ex3
-	 * @throws IOException
+	 * @throws IOException error
 	 */
 	public void CsvReader() throws IOException{	
 		List<String[]> tempFile = new ArrayList<String[]>();
@@ -232,7 +232,7 @@ public class Game {
 
 	/**
 	 * Kml writer 
-	 * @throws FileNotFoundException
+	 * @throws FileNotFoundException error
 	 */
 	public void KmlWriter() throws FileNotFoundException {
 		PrintWriter pw = new PrintWriter(new File(getFile()+".kml"));

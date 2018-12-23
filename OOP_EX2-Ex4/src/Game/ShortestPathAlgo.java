@@ -12,7 +12,7 @@ public class ShortestPathAlgo {
 
 	/**
 	 * Constructor
-	 * @param game
+	 * @param game game
 	 */
 	public ShortestPathAlgo(Game game) {	
 		ArrayList<Fruit> fruits = new ArrayList<Fruit>(game.fruits.size());  
@@ -23,8 +23,8 @@ public class ShortestPathAlgo {
 
 	/**
 	 * algorithim for one Packman
-	 * @param p
-	 * @return
+	 * @param p PACKMAN
+	 * @return PATH
 	 */
 	public Path singalPackman(Packman p){
 		ArrayList<Fruit> fruits = this.fruits;
@@ -53,9 +53,9 @@ public class ShortestPathAlgo {
 
 	/**
 	 * function gives us the closest fruit to the packman
-	 * @param packman
-	 * @param fruits
-	 * @return
+	 * @param packman packman 
+	 * @param fruits fruits
+	 * @return distance
 	 */
 	public Path faster_distance_one_Packman (Packman packman, ArrayList<Fruit> fruits) {
 		if (fruits.isEmpty()) 
@@ -70,9 +70,9 @@ public class ShortestPathAlgo {
 
 	/**
 	 * function gives us the distance between one packman and ea fruit
-	 * @param packman
-	 * @param fruits
-	 * @return
+	 * @param packman packman
+	 * @param fruits fruits
+	 * @return path
 	 */
 	public Path distance_Algorithim(Packman packman, ArrayList<Fruit> fruits) {
 
@@ -101,7 +101,7 @@ public class ShortestPathAlgo {
 	
 /**
  * function to get every packman the best path for him
- * @return
+ * @return path
  */
 	public ArrayList<Packman> multiPackmen (){
 		Path path = new Path();
@@ -185,9 +185,9 @@ public class ShortestPathAlgo {
 
 	/**
 	 * function to give the nearest fruit of a packman
-	 * @param packman
-	 * @param fruits
-	 * @return
+	 * @param packman packman
+	 * @param fruits fruits
+	 * @return fruit
 	 */
 	public Fruit TheCloserFurit(Packman packman,ArrayList<Fruit> fruits) {
 		Path path = new Path();
@@ -207,9 +207,9 @@ public class ShortestPathAlgo {
 
 	/**
 	 * help function
-	 * @param furit
-	 * @param fruits
-	 * @return
+	 * @param furit fruit
+	 * @param fruits list of fruits
+	 * @return index of fruit
 	 */
 	public int index(Fruit furit , ArrayList<Fruit> fruits) {
 		for (int i = 0; i < fruits.size(); i++) {
