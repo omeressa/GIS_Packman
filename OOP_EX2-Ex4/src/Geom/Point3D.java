@@ -38,7 +38,8 @@ public class Point3D implements Geom_element, Serializable
 	////////////////////////////       methods        /////////////////////////
 	///////////////////////////////////////////////////////////////////////////
 
-	
+
+
 	public double x() {return _x;}
 	public double y() {return _y;}
 	public double z() {return _z;}
@@ -241,4 +242,15 @@ public final static int DOWN = 6, UP = 7;
 	/** transform from radians to angles */
 	public static double d2r(double a) { return Math.toRadians(a);}
 	////////////////////////////////////////////////////////////////////////////////
+	public Point3D(String string1, String string2, String string3) {
+		String_2_Point3D(string1, string2 ,string3);
+	}
+
+	public void String_2_Point3D(String string1 , String string2 , String string3) {
+
+		_x = Double.parseDouble(string1);
+		_y = Double.parseDouble(string2);
+		_z = Double.parseDouble(string3);
+
+	}
 }
